@@ -1,0 +1,31 @@
+.Input{
+  width: 100%; /* so wrapper div take the full width of available space */
+  padding: 10px;
+}
+/* different classes for label, inputElement & textarea */
+.Label{
+  font-weight: bold;
+  display: block;/* to take its own row in our html document */
+  margin-bottom: 8px;
+}
+.InputElement{/* this is generic class but each type have its own class*/
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font: inherit;
+  padding: 6px 10px;
+  display: block;
+  width: 100%;
+}
+.InputElement:focus{
+  outline: none;
+  background-color: #ccc;
+}
+.Invalid{
+  border: 1px solid red;
+  background-color: #fda49a;
+}
+.ValidationError {
+  color: red;
+  margin: 5px 0;
+} 

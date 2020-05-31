@@ -1,0 +1,23 @@
+/* this code create a div wit 3 bars inside of it where each bar is one of hamburger icon bar */
+.DrawerToggle {
+  width: 40px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.DrawerToggle div {
+  width: 90%;
+  height: 3px;
+  background-color: white;
+}
+
+@media (min-width: 501px) {
+  .DrawerToggle {
+    display: none;
+  }
+} 

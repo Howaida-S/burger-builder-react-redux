@@ -1,0 +1,32 @@
+.Toolbar{
+  height: 56px;
+  width: 100%;
+  position: fixed; /* so that it's always at the top even if we scroll */
+  top: 0;
+  left: 0;
+  background-color: #703b09;
+/* so that all the items in toolbar are aligned next to each other even if they are block elements 
+because the default directional flexbox is row */ 
+  display: flex;
+  justify-content: space-between;
+/* determines how they should be aligned vertically*/  
+  align-items: center ;
+  padding: 0 20px;
+  box-sizing: border-box;
+/* important to be lower than z-index of backdrop because backdrop should go above toolbar */  
+  z-index: 90;
+}
+.Toolbar nav{
+/* control height relative to toolbar height to 
+make sure the navigation items span the full height of this toolbar */  
+  height: 100%;
+}  
+.Logo{
+  height:85%
+}
+
+@media(max-width:501px){ 
+  .DesktopOnly{
+    display: none;
+  }
+}

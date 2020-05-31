@@ -1,0 +1,11 @@
+.Logo{
+  background-color: white;
+  padding: 8px;
+  height: 100%;/* so that it doesn't stretch to the edges of surrounding div */
+}
+.Logo img{
+/* so image takes that height at maximum
+and it doesn't take its default inherent height which would be higher 
+*/  
+  height: 100%;
+}

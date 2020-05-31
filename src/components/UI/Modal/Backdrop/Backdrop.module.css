@@ -1,0 +1,10 @@
+.Backdrop{
+  height: 100%; /* take full height of the page*/
+  width: 100%;/* take full width of the page */
+  position: fixed;
+  z-index: 100;
+/* to position top-left corner */
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
