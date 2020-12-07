@@ -25,4 +25,15 @@ export const fetchIngredientsFailed = () => { // the action dispatched if failed
     type: actionTypes.FETCH_INGREDIENTS_FAILED
   };
 }
-
+export const initIngredients = () => {
+  return dispatch => {
+// execute async code inside this func & dispatch a new action (setIngredients)whenever i'm done 
+    axios.get('/ingredients.json')
+    .then( response => {
+      dispatch(setIngredients(response.data));
+    } )
+    .catch( error => {
+      dispatch(fetchIngredientsFailed()); // because we don't need error.message we don't pass error here
+    } );
+  }
+};
