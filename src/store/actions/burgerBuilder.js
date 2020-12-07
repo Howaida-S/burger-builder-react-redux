@@ -28,7 +28,7 @@ export const fetchIngredientsFailed = () => { // the action dispatched if failed
 export const initIngredients = () => {
   return dispatch => {
 // execute async code inside this func & dispatch a new action (setIngredients)whenever i'm done 
-    axios.get('/ingredients.json')
+    axios.get('/ingredientsssss.json')
     .then( response => {
       dispatch(setIngredients(response.data));
     } )
